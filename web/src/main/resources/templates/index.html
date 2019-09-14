@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<h1>real index.</h1>
+<div>
+    <label th:text="#{login.account}">:</label>
+    <label th:text="#{login.passwrd}">:</label>
+</div>
+<div>
+    <a th:text="中文" th:href="@{/index.html(lang='zh_CN')}"/>
+    <a th:text="English" th:href="@{/index.html(lang='en_US')}"/>
+</div>
+</body>
+</html>

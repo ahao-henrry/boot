@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahao.spring.boot.jdbc.mapper.UserMapper">
+
+    <insert id="addOne" parameterType="com.ahao.spring.boot.jdbc.vo.UserVO">
+        INSERT INTO user_t (name, gender, age)
+        VALUES (#{name, jdbcType=VARCHAR}, #{gender, jdbcType=TINYINT}, #{age, jdbcType=NUMERIC})
+    </insert>
+</mapper>
